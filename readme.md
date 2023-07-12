@@ -6,6 +6,6 @@ a Template using
 [vite](https://vitejs.dev/),
 [React](https://react.dev/),
 [three.js](https://threejs.org/),
- and [TailwindCSS](https://tailwindcss.com/)
+and [TailwindCSS](https://tailwindcss.com/)
 
- Stay tuned to see more...
+Stay tuned to see more...

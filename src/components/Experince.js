@@ -3,39 +3,33 @@ import Debug from "./Utils/Debug";
 import Sizes from "./Utils/Sizes";
 import Time from "./Utils/Time";
 import Resources from "./Utils/Resources";
-import mainSources from "./mainSources"
+import mainSources from "./mainSources";
 
 let instance = null;
 
 export default class Experience {
-    resize() {
+  resize() {}
 
+  destroy() {}
+
+  update() {}
+
+  constructor(canvas) {
+    if (instance) {
+      return instance;
     }
 
-    destroy () {
-
-    }
-
-    update() {
-
-    }
-
-    constructor(canvas) {
-      if(instance) {
-        return instance;
-      }
-
-      instance = this;
+    instance = this;
     //   window.experience = this;
 
     //  Options
-      this.canvas = canvas;
+    this.canvas = canvas;
 
-      this.debug = new Debug();
-      this.sizes =  new Sizes(this.canvas);
-      this.time = new Time();
-      this.scene = new THREE.Scene();
-      this.resources = new Resources(mainSources);
-    //   this.camera = new 
-    }
+    this.debug = new Debug();
+    this.sizes = new Sizes(this.canvas);
+    this.time = new Time();
+    this.scene = new THREE.Scene();
+    this.resources = new Resources(mainSources);
+    //   this.camera = new
+  }
 }
