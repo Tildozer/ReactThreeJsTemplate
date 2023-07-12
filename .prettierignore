@@ -1,0 +1,16 @@
+src/assests/
+public/
+node_modules/
+dist/
+
+
+# config files
+
+.gitignore
+.eslintrc.cjs
+.prettierrc.json
+package-lock.json
+package.json
+postcss.config.js
+tailwind.config.js
+vite.config.js
