@@ -4,12 +4,12 @@ import viteLogo from "/vite.svg";
 import "./index.css";
 import Experience from "../components/Experince";
 
-class App extends Component{
+class App extends Component {
   constructor() {
     super();
     this.ref = React.createRef();
   }
-  
+
   render() {
     return (
       <>
@@ -30,7 +30,7 @@ class App extends Component{
           </div>
           <p>Click on the Vite and React logos to learn more</p>
         </div>
-        <Experience ref={this.ref}/>
+        <Experience ref={this.ref} />
       </>
     );
   }
