@@ -1,10 +1,10 @@
 import * as THREE from "three";
 import { Canvas } from "@react-three/fiber";
-import { Component, createRef } from "react";
-import Debug from "./Utils/Debug";
-import Sizes from "./Utils/Sizes";
-import Time from "./Utils/Time";
-import Resources from "./Utils/Resources";
+import { Component } from "react";
+import Debug from "../Utils/Debug";
+import Sizes from "../Utils/Sizes";
+import Time from "../Utils/Time";
+import Resources from "../Utils/Resources";
 import mainSources from "./mainSources";
 
 export default class Experience extends Component {
@@ -14,7 +14,7 @@ export default class Experience extends Component {
 
   update() {}
 
-  constructor(props) {
+  constructor() {
     super();
     // instance = this;
     //   window.experience = this;
