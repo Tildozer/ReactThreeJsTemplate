@@ -1,5 +1,5 @@
-import EventEmitter from "./EventEmitter";
 import { Props } from "@react-three/fiber";
+import { EventEmitter } from ".";
 
 export default class Sizes extends EventEmitter {
   public width: number;

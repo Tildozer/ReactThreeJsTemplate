@@ -1,7 +1,7 @@
 import * as THREE from "three";
 import { GLTF, GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
-import EventEmitter from "./EventEmitter";
-import { Sources } from "../World/mainSources";
+import { EventEmitter } from ".";
+import { Sources } from "..";
 interface Loaders {
   gltfLoader: GLTFLoader;
   textureLoader: THREE.TextureLoader;
