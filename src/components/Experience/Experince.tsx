@@ -54,10 +54,10 @@ export default class Experience extends Component {
     // this.camera.update();
   }
 
-  constructor(props: Props) {
+  constructor() {
     if (instance) return instance;
 
-    super(props);
+    super({});
     instance = this;
     window.experience = this;
 
