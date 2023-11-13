@@ -6,6 +6,9 @@ export default defineConfig({
   plugins: [react()],
   build:
     {
+        commonjsOptions: {
+          exclude: ['ckeditor/*'],
+        },
         outDir: '../dist',
         emptyOutDir: true,
         sourcemap: true
