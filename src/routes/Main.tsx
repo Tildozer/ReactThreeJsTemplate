@@ -1,19 +1,28 @@
-import React, { Component, RefObject } from "react";
+import React from "react";
+import { Experince, Floor } from "../components";
+import { Canvas } from "@react-three/fiber";
 import "./index.css";
 
-interface Props {}
+type Props = {};
 
-class Main extends Component {
-  public ref: RefObject<Component>;
-
-  constructor(props: Props) {
-    super(props);
-    this.ref = React.createRef();
-  }
-
-  render() {
-    return <div className=" bg-slate-700 text-xl text-white"></div>;
-  }
-}
+const Main = (props: Props) => {
+  return (
+    <body className="h-screen w-screen">
+      <Canvas
+        className="bg-slate-800"
+        camera={{
+          // fov: 45,
+          // zoom: 100,
+          near: 0.1,
+          far: 100,
+          position: [3, 2, 6],
+        }}
+      >
+        <Experince />
+        <Floor />
+      </Canvas>
+    </body>
+  );
+};
 
 export default Main;
